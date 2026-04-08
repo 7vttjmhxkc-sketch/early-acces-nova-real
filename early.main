@@ -152,6 +152,14 @@ local function getDefaultConfig()
                 SkyboxRt = "rbxassetid://159454300",
                 SkyboxUp = "rbxassetid://159454288"
             },
+            ["red"] = {
+                SkyboxBk = "rbxassetid://110596680458596",
+                SkyboxDn = "rbxassetid://107721119647467",
+                SkyboxFt = "rbxassetid://112302123934875",
+                SkyboxLf = "rbxassetid://130005191592701",
+                SkyboxRt = "rbxassetid://127629064484845",
+                SkyboxUp = "rbxassetid://121313605423130"
+            },
         },
         WeaponSkins = {
             Blood = { primary = "rbxassetid://122271132142798", secondary = "rbxassetid://87911546375139" },
@@ -172,7 +180,7 @@ local function getDefaultConfig()
         },
         CustomSounds = {
             Minecraft = "rbxassetid://8766809464",
-            kid = "rbxassetid://108774056375939",
+            Simple = "rbxassetid://3748776946",
             Bing = "rbxassetid://6607204501",
             Skeet = "rbxassetid://5633695679",
             Rust = "rbxassetid://1255040462",
@@ -184,8 +192,11 @@ local function getDefaultConfig()
             Headshot = "rbxassetid://2513174484",
             Grrr = "rbxassetid://8603227350", 
             Rizz = "rbxassetid://89848519630209",
-            Mommy = "rbxassetid://90759147003294",                        
-    }   }
+            Mommy = "rbxassetid://90759147003294",
+            kid = "rbxassetid://108774056375939",
+            kid2 = "rbxassetid://72509238430690"
+        }
+    }
 end
 
 if not isfolder("Better Eh") then
