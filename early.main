@@ -66,17 +66,7 @@ local function StartAnimation()
 end
 
 -- Start
-StartAnimation()-- 1. ZUERST DIE BENACHRICHTIGUNG
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "SKY NOVA",
-    Text = "Early Access erfolgreich geladen!",
-    Duration = 5
-})
-
--- 2. DANN DEIN RESTLICHER CODE
-print("Hauptskript startet...")
-
--- Hier kommt dann dein ganzer Nova-Code (Buttons, Funktionen, etc.)-- [[ SKY NOVA PROTECTION ]]
+StartAnimation()-- [[ SKY NOVA PROTECTION ]]
 local creator = "7vttjmhxkc-sketch"
 local version = "1.0.0"
 
@@ -220,7 +210,7 @@ GearSkins = config.GearSkins
 CustomSounds = config.CustomSounds
 
 local Window = WindUI:CreateWindow({
-    Title = "Skynova early access",
+    Title = "Skynova",
     Icon = "crown",
     Author = "by cresyx and albo",
     Folder = "BetterEH",
@@ -335,7 +325,7 @@ info:Select()
 
 info:Paragraph({
     Title = "Über dieses Script",
-    Desc = "Kein Cheat – nur zur Verbesserung von EH und für Cosmetics.\n\nAchtung: Wird weiterverkauft. Der offizielle Discord heißt 'Skynova'.",you are in early access mode!
+    Desc = "Kein Cheat – nur zur Verbesserung von EH und für Cosmetics.\n\nAchtung: Wird weiterverkauft. Der offizielle Discord heißt 'Skynova'.",
     Color = "Red",
     Buttons = {
         {
@@ -353,7 +343,7 @@ info:Paragraph({
 
 info:Paragraph({
     Title = "About This Script",
-    Desc = "Not a cheat – made to improve EH and add cosmetics.\n\nWarning: Being resold. Official Discord is 'Skynova'.", du bist grade im early access mode!
+    Desc = "Not a cheat – made to improve EH and add cosmetics.\n\nWarning: Being resold. Official Discord is 'Skynova'.",
     Color = "Red",
     Buttons = {
         {
