@@ -220,7 +220,7 @@ GearSkins = config.GearSkins
 CustomSounds = config.CustomSounds
 
 local Window = WindUI:CreateWindow({
-    Title = "Skynova",
+    Title = "Skynova early access",
     Icon = "crown",
     Author = "by cresyx and albo",
     Folder = "BetterEH",
