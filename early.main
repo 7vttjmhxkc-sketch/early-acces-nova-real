@@ -167,7 +167,8 @@ local function getDefaultConfig()
             Gold = "rbxassetid://102006781490148",
             Devil = "rbxassetid://81551553428680",
             Ozean = "rbxassetid://138912737283012",
-            Galaxy = "rbxassetid://122271132142798"
+            Galaxy = "rbxassetid://122271132142798",
+            green =  "rbxassetid://76213908980700"
         },
         CustomSounds = {
             Minecraft = "rbxassetid://8766809464",
