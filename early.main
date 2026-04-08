@@ -66,7 +66,17 @@ local function StartAnimation()
 end
 
 -- Start
-StartAnimation()-- [[ SKY NOVA PROTECTION ]]
+StartAnimation()-- 1. ZUERST DIE BENACHRICHTIGUNG
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "SKY NOVA",
+    Text = "Early Access erfolgreich geladen!",
+    Duration = 5
+})
+
+-- 2. DANN DEIN RESTLICHER CODE
+print("Hauptskript startet...")
+
+-- Hier kommt dann dein ganzer Nova-Code (Buttons, Funktionen, etc.)-- [[ SKY NOVA PROTECTION ]]
 local creator = "7vttjmhxkc-sketch"
 local version = "1.0.0"
 
