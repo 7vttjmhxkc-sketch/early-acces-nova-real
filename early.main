@@ -335,7 +335,7 @@ info:Select()
 
 info:Paragraph({
     Title = "Über dieses Script",
-    Desc = "Kein Cheat – nur zur Verbesserung von EH und für Cosmetics.\n\nAchtung: Wird weiterverkauft. Der offizielle Discord heißt 'Skynova'.",
+    Desc = "Kein Cheat – nur zur Verbesserung von EH und für Cosmetics.\n\nAchtung: Wird weiterverkauft. Der offizielle Discord heißt 'Skynova'.",you are in early access mode!
     Color = "Red",
     Buttons = {
         {
@@ -353,7 +353,7 @@ info:Paragraph({
 
 info:Paragraph({
     Title = "About This Script",
-    Desc = "Not a cheat – made to improve EH and add cosmetics.\n\nWarning: Being resold. Official Discord is 'Skynova'.",
+    Desc = "Not a cheat – made to improve EH and add cosmetics.\n\nWarning: Being resold. Official Discord is 'Skynova'.", du bist grade im early access mode!
     Color = "Red",
     Buttons = {
         {
