@@ -151,15 +151,9 @@ local function getDefaultConfig()
                 SkyboxLf = "rbxassetid://159454286",
                 SkyboxRt = "rbxassetid://159454300",
                 SkyboxUp = "rbxassetid://159454288"
-            },
-            ["red"] = {
-                SkyboxBk = "rbxassetid://110596680458596",
-                SkyboxDn = "rbxassetid://107721119647467",
-                SkyboxFt = "rbxassetid://112302123934875",
-                SkyboxLf = "rbxassetid://130005191592701",
-                SkyboxRt = "rbxassetid://127629064484845",
-                SkyboxUp = "rbxassetid://121313605423130"
-            },
+            }
+            
+                      
         },
         WeaponSkins = {
             Blood = { primary = "rbxassetid://122271132142798", secondary = "rbxassetid://87911546375139" },
@@ -1643,6 +1637,72 @@ configtab:Button({
 
         selectedConfig = nil
     end
+}) 
+local musicTab = Window:Tab({
+    Title = "Music",
+    Icon = "music"
+})
+
+local currentVolume = 0.5
+local musicPlayer = nil
+
+local function playMusic(id)
+    if musicPlayer then 
+        musicPlayer:Stop()
+        musicPlayer:Destroy() 
+    end
+    musicPlayer = Instance.new("Sound")
+    musicPlayer.SoundId = "rbxassetid://" .. id
+    musicPlayer.Volume = currentVolume
+    musicPlayer.Looped = true
+    musicPlayer.Parent = game:GetService("SoundService")
+    musicPlayer:Play()
+end
+
+-- --- LAUTSTÄRKE ---
+
+musicTab:Button({
+    Title = "Volume: 100%",
+    Callback = function()
+        currentVolume = 1.0
+        if musicPlayer then musicPlayer.Volume = 1.0 end
+    end
+})
+
+musicTab:Button({
+    Title = "Volume: 50%",
+    Callback = function()
+        currentVolume = 0.5
+        if musicPlayer then musicPlayer.Volume = 0.5 end
+    end
+})
+
+musicTab:Button({
+    Title = "Volume: 10%",
+    Callback = function()
+        currentVolume = 0.1
+        if musicPlayer then musicPlayer.Volume = 0.1 end
+    end
+})
+
+musicTab:Button({
+    Title = "Stop Music",
+    Callback = function()
+        if musicPlayer then
+            musicPlayer:Stop()
+            musicPlayer:Destroy()
+            musicPlayer = nil
+        end
+    end
+})
+
+-- --- DEIN SONG ---
+
+musicTab:Button({
+    Title = "▶ Chill Music",
+    Callback = function()
+        playMusic("140653696800228")
+    end
 })
 
 Window:OnDestroy(function()
@@ -1658,3 +1718,4 @@ Window:OnDestroy(function()
     p3.BackgroundColor3 = Color3.new(1,1,1)
     p4.BackgroundColor3 = Color3.new(1,1,1)
 end)
+       
